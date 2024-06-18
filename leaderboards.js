@@ -30,11 +30,9 @@ function calculate(map, hits, type = "pulse") {
 	switch (type) {
 		case "pulse":
 		return ((0.8 * ((11 ** Math.log(diff)) * (notes ** 0.1))) ** (acc)) * Math.min(notes/500, 1)
-		break;
 		
 		case "accuracy":
 		return acc;
-		break;
 	}
 	//KP = ((5 * ((1.4 ^ diff) * (min(notes,3737) ^ 0.1))) ^ (acc/100)) * min(notes/500, 1)
 }
